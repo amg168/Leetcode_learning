@@ -1,0 +1,46 @@
+class Solution {
+    public int removeElement(int[] nums, int val) {
+        int left=0;
+
+        int right=nums.length -1;
+
+        //统计交换次数
+        int count=0;
+
+        if(left == right && nums[left] == val)
+            return 0;
+        else
+        {
+            while(left <= right)
+        {
+            if(nums[left]  !=val)
+                left++;
+            else if(nums[left] == val && nums[right] == val)
+            {
+                right--;
+
+                count++;
+            }
+            else if(nums[left] == val && nums[right] !=val)
+            {
+                int temp=nums[left];
+
+                nums[left]=nums[right];
+
+                nums[right]=temp;
+
+                count++;
+                
+                left++;
+
+                right--;
+            }
+        }
+
+        }
+
+        return nums.length-count;
+    }
+}
+//runtime:0 ms
+//memory:37.1 MB

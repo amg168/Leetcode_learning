@@ -1,0 +1,33 @@
+class Solution {
+    public int dominantIndex(int[] nums) {
+        int[] temp=Arrays.copyOf(nums,nums.length);
+		
+        int result=0;
+        if(nums.length == 1){
+            return result;
+        }else{
+            Arrays.sort(nums);
+
+            int max=nums[nums.length-1];
+
+            for(int i=0;i<nums.length-1;i++)
+            {
+                if(max < 2*nums[i])
+                    result = -1;                    
+            }
+            
+            if(result !=-1)
+            {
+                for(int j=0;j<temp.length;j++)
+                {
+                    if(temp[j] == max)
+                        result = j;
+                }
+            }
+        }
+
+        return result;
+    }
+}
+//runtime:1 ms
+//memory:36.2 MB

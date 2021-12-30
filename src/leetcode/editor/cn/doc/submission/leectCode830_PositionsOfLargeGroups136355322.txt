@@ -1,0 +1,45 @@
+class Solution {
+    public List<List<Integer>> largeGroupPositions(String s) {
+        List<List<Integer>> arrlist=new ArrayList<List<Integer>>();
+
+	        int count=1;
+            int start=0;
+            int end=0;
+            
+	        for(int i=0;i<s.length()-1;i++)
+	        {
+	            if(s.charAt(i+1) == s.charAt(i))
+	            {
+	                count++;
+	            }
+	            else
+	            {
+	            	count =1;
+	                start=i+1;
+	            }
+	            
+	            end=i+1;
+	            
+
+	            if(count>=3)
+	            {
+	            	if(!arrlist.isEmpty() && arrlist.get(arrlist.size()-1).get(0) == start && arrlist.get(arrlist.size()-1).get(1) !=end)
+	            	{
+	            		arrlist.remove(arrlist.size()-1);
+	            	}
+	            	 
+            		List<Integer> temp=new ArrayList<Integer>();
+	                
+	                temp.add(start);
+
+	                temp.add(end);
+
+	                arrlist.add(temp);
+	            }
+	        }
+
+	        return arrlist;
+    }
+}
+//runtime:9 ms
+//memory:39.2 MB

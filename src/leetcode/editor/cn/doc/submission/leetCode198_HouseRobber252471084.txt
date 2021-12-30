@@ -1,0 +1,32 @@
+class Solution {
+    public int rob(int[] nums) {
+
+        if(nums.length <=1)
+            return nums.length == 0 ? 0 : nums[0];
+
+            int[] dp = new int[nums.length];
+
+            int res = nums[1] > nums[0] ? nums[1] : nums[0];
+
+            for(int i = 0; i< nums.length ; i++){
+                if(i == 0){
+                    dp[0] = nums[0];
+                    continue;
+                }
+
+                if(i == 1){
+                    dp[1] = Math.max(nums[0],nums[1]);
+                    continue;
+                }
+
+                dp[i] = Math.max(dp[i - 1],dp[i - 2] + nums[i]);
+
+                res = Math.max(dp[i],res);
+                    
+            }
+
+            return res;
+    }
+}
+//runtime:0 ms
+//memory:36 MB

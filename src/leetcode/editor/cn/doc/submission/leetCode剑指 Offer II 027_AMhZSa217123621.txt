@@ -1,0 +1,81 @@
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public boolean isPalindrome(ListNode head) {
+        ListNode slow=head;
+
+        ListNode fast=head;
+
+        //标志中间节点
+        ListNode middle=null;
+
+        //快慢指针，当快指针走到最后时，慢指针走到正中间
+        while(fast.next!=null && fast.next.next!=null)
+        {
+            slow=slow.next;
+
+            fast=fast.next.next;
+        }
+
+        middle=slow;
+
+        //从慢指针往后将链表反转
+        ListNode newHead=null;
+
+        ListNode middleNext=middle.next;
+
+        while(middleNext != null)
+        { 
+            ListNode temp=middleNext.next;
+
+            middleNext.next=newHead;
+            
+            newHead=middleNext;
+
+            middleNext=temp;
+        }
+
+        //分别从两头来时遍历，得到的节点相应的数据域相等，则为回文链表，否则不是回文链表
+        boolean isPalindrome=true;
+
+        ListNode startNode=head;
+
+        while(newHead !=null)
+        {
+            if(startNode.val != newHead.val)
+                isPalindrome=false;
+
+            startNode=startNode.next;
+
+            newHead=newHead.next;
+        }
+
+        //将中间节点到最后节点反转过来
+        ListNode nextmiddle=middle.next;
+
+        ListNode p4=null;
+
+        while(nextmiddle !=null)
+        {
+            p4=nextmiddle.next;
+
+            nextmiddle.next=middle;
+
+            middle=nextmiddle;
+
+            nextmiddle=p4;
+        }
+
+        return isPalindrome;
+    }
+}
+//runtime:4 ms
+//memory:47.8 MB

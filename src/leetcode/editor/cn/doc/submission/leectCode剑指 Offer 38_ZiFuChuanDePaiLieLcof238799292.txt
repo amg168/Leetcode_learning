@@ -1,0 +1,45 @@
+class Solution {
+    public String[] permutation(String s) {
+        List<String> result = new ArrayList<String>();
+
+        process(s.toCharArray(),0,result);
+
+        return result.toArray(new String[result.size()]);
+    }
+
+    public void process(char[] str,int i,List<String> res)
+    {
+        if(i == str.length)
+        {
+            res.add(String.valueOf(str));
+        }
+
+        boolean[] visited = new boolean[26];
+
+        for(int j=i;j<str.length;j++)
+        {
+            if(!visited[str[j]-'a'])
+            {
+                visited[str[j]-'a'] = true;
+
+                swap(str,i,j);
+
+                process(str,i+1,res);
+
+                swap(str,i,j);
+            }
+        }
+
+    }
+
+    public void swap(char[] str,int i,int j)
+    {
+        char temp=str[i];
+
+        str[i] =str[j];
+
+        str[j] = temp;
+     }
+}
+//runtime:4 ms
+//memory:42.4 MB

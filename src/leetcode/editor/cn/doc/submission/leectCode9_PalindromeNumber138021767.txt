@@ -1,0 +1,33 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+		String s=x+"";
+		
+		int length=s.length();
+		
+		boolean result=true;
+		
+		if(x<0)
+			result=false;
+		
+		if(length%2 !=0)
+		{
+			for(int i=0;i<(length+1)/2-1;i++)
+			{
+				if(s.charAt(i) !=  s.charAt(length-i-1))
+					result&=false;
+			}
+		}
+		else
+		{
+			for(int i=0;i<length/2;i++)
+			{
+				if(s.charAt(i) !=  s.charAt(length-i-1))
+					result&=false;
+			}
+		}
+		
+		return result;
+        }
+}
+//runtime:17 ms
+//memory:37.9 MB

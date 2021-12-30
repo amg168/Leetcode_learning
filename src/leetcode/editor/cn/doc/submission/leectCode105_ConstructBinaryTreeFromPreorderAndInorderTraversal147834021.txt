@@ -1,0 +1,75 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+        int inorderLength=inorder.length;
+
+        int preorderLength=preorder.length;
+
+        if(inorderLength ==0 || preorderLength == 0)
+        	return null;
+
+        int rootVal=preorder[0];
+        
+        TreeNode root;
+        
+        TreeNode rootLeftChild;
+        
+        TreeNode rootRightChild;
+
+    	//找到左子树和右子树的根，链接到根节点
+        int[] leftList;
+
+        int[] rightList;
+        
+        if(inorderLength !=1)
+        {
+        	int rootIndex=0;
+            for(int i=0;i<inorderLength;i++)
+            {
+                if(inorder[i] == rootVal)
+                {
+                    rootIndex=i;
+                    
+                    break;
+                }                               
+            }
+            
+            leftList=Arrays.copyOfRange(inorder, 0, rootIndex);
+            
+            rightList=Arrays.copyOfRange(inorder, rootIndex+1, inorderLength);
+
+            //构建左子树
+            rootLeftChild=buildTree(Arrays.copyOfRange(preorder, 1, leftList.length+1),leftList);
+
+            //构建右子树,如果左子树不存在
+            if(leftList.length != 0)
+            	rootRightChild=buildTree( Arrays.copyOfRange(preorder, leftList.length+1,preorderLength),rightList);
+            else
+            	rootRightChild=buildTree(Arrays.copyOfRange(preorder, 1,preorderLength),rightList);
+            
+            root=new TreeNode(rootVal,rootLeftChild,rootRightChild);
+        }
+        else
+        {            
+        	root=new TreeNode(rootVal,null,null);
+        }
+
+        return root;
+        }
+}
+//runtime:16 ms
+//memory:88.9 MB

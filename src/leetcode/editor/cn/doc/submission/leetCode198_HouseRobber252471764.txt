@@ -1,0 +1,10 @@
+class Solution {
+    public int rob(int[] nums) {
+
+    }
+}
+
+//total_correct:0
+//compile_error:Line 4: error: missing return statement
+    }
+    ^

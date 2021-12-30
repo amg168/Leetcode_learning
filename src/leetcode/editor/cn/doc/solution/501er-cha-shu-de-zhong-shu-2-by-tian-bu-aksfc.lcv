@@ -1,0 +1,77 @@
+### 解题思路
+
+用前序遍历解决
+
+### 代码
+
+* java
+
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+
+    /*  再用先序遍历写一遍
+    *
+    * */
+    public void xianxuBianli(TreeNode root, ArrayList<Integer> list) {
+        if (root != null) {
+            list.add(root.val);
+            xianxuBianli(root.left, list);
+            xianxuBianli(root.right, list);
+        }
+    }
+
+    public int[] findMode(TreeNode root) {
+
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        xianxuBianli(root, list);
+        int len = list.size(), max = 1;
+        for (int i = 0; i < len; i++) {
+            if (!map.containsKey(list.get(i))) {
+                map.put(list.get(i), 1);
+            } else {
+                int num = map.get(list.get(i));
+                map.put(list.get(i), num + 1);
+                if (num + 1 > max) {
+                    max = num + 1;
+                }
+            }
+        }
+        list = new ArrayList<>();
+        Set<Map.Entry<Integer, Integer>> entry = map.entrySet();
+        Iterator<Map.Entry<Integer, Integer>> iterator = entry.iterator();
+        while(iterator.hasNext()) {
+            Object next = iterator.next();
+            Map.Entry entry1 = (Map.Entry)next;
+            if (max == (Integer)entry1.getValue()) {
+                list.add((Integer)entry1.getKey());
+            }
+        }
+        len = list.size();
+        int[] x = new int[len];
+        for (int i = 0; i < len; i++) {
+            x[i] = list.get(i);
+        }
+
+        return x;
+    }
+
+}
+```
+

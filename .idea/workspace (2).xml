@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c1918438-b457-4916-8a68-0644a9ae5976" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="22JQLEFG4pnAyc8bzilLMO1UYLZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="leetcode.editor.cn.common" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.leetCode508_MostFrequentSubtreeSum">
+    <configuration name="leetCode337_HouseRobberIii" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.leetCode337_HouseRobberIii" />
+      <module name="Leetcode_learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.editor.cn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="leetCode437_PathSumIii" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.leetCode437_PathSumIii" />
+      <module name="Leetcode_learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.editor.cn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="leetCode449_SerializeAndDeserializeBst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.leetCode449_SerializeAndDeserializeBst" />
+      <module name="Leetcode_learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.editor.cn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="leetCode450_DeleteNodeInABst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.leetCode450_DeleteNodeInABst" />
+      <module name="Leetcode_learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.editor.cn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="leetCode508_MostFrequentSubtreeSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.leetCode508_MostFrequentSubtreeSum" />
+      <module name="Leetcode_learning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.editor.cn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Leetcode_learning" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Leetcode_learning" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.leetCode508_MostFrequentSubtreeSum" />
+        <item itemvalue="Application.leetCode450_DeleteNodeInABst" />
+        <item itemvalue="Application.leetCode449_SerializeAndDeserializeBst" />
+        <item itemvalue="Application.leetCode437_PathSumIii" />
+        <item itemvalue="Application.leetCode337_HouseRobberIii" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1918438-b457-4916-8a68-0644a9ae5976" name="Default Changelist" comment="" />
+      <created>1639553152542</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639553152542</updated>
+      <workItem from="1639553153599" duration="5562000" />
+      <workItem from="1639569289814" duration="3543000" />
+      <workItem from="1639618759010" duration="214000" />
+      <workItem from="1639619070338" duration="4498000" />
+      <workItem from="1639640207053" duration="83000" />
+      <workItem from="1639707060978" duration="5647000" />
+      <workItem from="1640069345113" duration="179000" />
+      <workItem from="1640069535505" duration="1972000" />
+      <workItem from="1640134983031" duration="7635000" />
+      <workItem from="1640152262291" duration="9610000" />
+      <workItem from="1640220672348" duration="11822000" />
+      <workItem from="1640306712581" duration="13128000" />
+      <workItem from="1640568938610" duration="1447000" />
+      <workItem from="1640571592319" duration="13144000" />
+      <workItem from="1640654466854" duration="7976000" />
+      <workItem from="1640671538760" duration="334000" />
+      <workItem from="1640740557600" duration="5107000" />
+      <workItem from="1640745905494" duration="82000" />
+      <workItem from="1640745997490" duration="6299000" />
+      <workItem from="1640759222448" duration="279000" />
+      <workItem from="1640765570918" duration="2838000" />
+      <workItem from="1640826232161" duration="12531000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/leetCode501_FindModeInBinarySearchTree.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/leetCode501_FindModeInBinarySearchTree.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/leetCode230_KthSmallestElementInABst.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/leetCode331_VerifyPreorderSerializationOfABinaryTree.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/leetCode331_VerifyPreorderSerializationOfABinaryTree.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/leetCode437_PathSumIii.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/leetCode449_SerializeAndDeserializeBst.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/leetCode449_SerializeAndDeserializeBst.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/leetCode508_MostFrequentSubtreeSum.java</url>
+          <line>124</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

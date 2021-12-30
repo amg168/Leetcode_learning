@@ -1,0 +1,29 @@
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+		List<Integer> list=new LinkedList<Integer>();
+		
+		int[] position=new int[2];
+		
+		for(int i=0;i<nums.length;i++)
+		{
+			list.add(target-nums[i]);
+		}
+		
+		for(int i=0;i<list.size();i++)
+		{
+			if(list.contains(nums[i]) && (list.indexOf(nums[i]) !=i) )
+			{
+
+				position[0]=i>list.indexOf(nums[i])?list.indexOf(nums[i]):i;
+				
+				position[1]=i>list.indexOf(nums[i])?i:list.indexOf(nums[i]);
+				
+				break;
+			}
+		}
+		
+		return position;
+        }
+}
+//runtime:2 ms
+//memory:38.7 MB
