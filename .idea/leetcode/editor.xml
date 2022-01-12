@@ -615,7 +615,10 @@
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetCode144_BinaryTreePreorderTraversal.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com144" />
+              <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode144_BinaryTreePreorderTraversal.java" />
+              <option name="titleSlug" value="binary-tree-preorder-traversal" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -797,6 +800,39 @@
               <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode572_SubtreeOfAnotherTree.java" />
               <option name="titleSlug" value="subtree-of-another-tree" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode606_ConstructStringFromBinaryTree.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetCode606_ConstructStringFromBinaryTree.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com606" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode606_ConstructStringFromBinaryTree.java" />
+              <option name="titleSlug" value="construct-string-from-binary-tree" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode617_MergeTwoBinaryTrees.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetCode617_MergeTwoBinaryTrees.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com617" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode617_MergeTwoBinaryTrees.java" />
+              <option name="titleSlug" value="merge-two-binary-trees" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode623_AddOneRowToTree.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetCode623_AddOneRowToTree.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com623" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode623_AddOneRowToTree.java" />
+              <option name="titleSlug" value="add-one-row-to-tree" />
             </LeetcodeEditor>
           </value>
         </entry>
