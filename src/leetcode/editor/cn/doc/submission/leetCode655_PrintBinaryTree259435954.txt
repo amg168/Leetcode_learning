@@ -1,0 +1,78 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    List<List<String>> result = new ArrayList<>();
+
+    Queue<AnnotatedNode> queue = new LinkedList<>();
+
+    public List<List<String>> printTree(TreeNode root) {
+        if(root == null)
+            return result;
+
+        //假设二叉树其高度为height;
+        int height = getHeightOfATree(root);
+        //总的字符个数为
+        double strCountOfNode = Math.pow(2 , height) - 1;
+        queue.add(new AnnotatedNode(root , 0 , (int) (strCountOfNode / 2)));
+        while(!queue.isEmpty()){
+            int size = queue.size();
+
+            List<String> levelResult = new ArrayList<>();
+            for(int i = 0; i < strCountOfNode ; i++)
+                levelResult.add("");
+
+            for(int i = 0 ; i < size ; i++){
+                AnnotatedNode cur = queue.poll();
+
+                levelResult.set(cur.pos, cur.node.val+"");
+                if(cur.node.left != null)
+                    queue.add(new AnnotatedNode(cur.node.left , cur.depth + 1, (int) ( cur.pos - Math.pow(2, height - (cur.depth + 1) - 1))));
+
+                if(cur.node.right != null)
+                    queue.add(new AnnotatedNode(cur.node.right , cur.depth + 1, (int) (cur.pos + Math.pow(2, height - (cur.depth + 1) - 1))));
+            }
+
+            System.out.println(levelResult);
+            result.add(levelResult);
+        }
+
+        return  result;
+
+    }
+
+    public int getHeightOfATree(TreeNode root){
+        if(root == null)
+            return 0;
+
+        int left = getHeightOfATree(root.left);
+        int right = getHeightOfATree(root.right);
+
+        return Math.max(left,right ) +  1;
+    }
+
+    class AnnotatedNode {
+        TreeNode node;
+        int depth,pos;
+        AnnotatedNode(TreeNode n, int d, int p) {
+            node = n;
+            depth = d;
+            pos = p;
+        }
+    }
+}
+
+//runtime:9 ms
+//memory:38.1 MB
