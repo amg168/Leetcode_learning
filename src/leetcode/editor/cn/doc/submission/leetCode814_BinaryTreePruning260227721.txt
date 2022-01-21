@@ -1,0 +1,54 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public TreeNode pruneTree(TreeNode root) {
+        if(root == null)
+            return null;
+        //清除所有返回false值的节点
+        boolean rootIsOne = haveOne(root);
+
+        if(rootIsOne == false && root != null)
+            root = null;
+
+        TreeNode left = null;
+        TreeNode right = null;
+        if(root != null){
+            left = pruneTree(root.left);
+            right = pruneTree(root.right);
+
+            root.left = left;
+            root.right = right;
+        }
+
+        return  root;
+    }
+
+    //判断一个节点的的子树中是否包含1
+    public boolean haveOne(TreeNode node){
+        if(node == null)
+            return false;
+
+        boolean isRootEqualOne = node.val == 1 ? true : false;
+
+        boolean left = haveOne(node.left);
+        boolean right = haveOne(node.right);
+
+        return isRootEqualOne || left || right;
+    }
+}
+
+//runtime:0 ms
+//memory:36.1 MB
