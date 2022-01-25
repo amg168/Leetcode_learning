@@ -1001,6 +1001,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode865_SmallestSubtreeWithAllTheDeepestNodes.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetCode865_SmallestSubtreeWithAllTheDeepestNodes.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com865" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode865_SmallestSubtreeWithAllTheDeepestNodes.java" />
+              <option name="titleSlug" value="smallest-subtree-with-all-the-deepest-nodes" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode872_LeafSimilarTrees.java">
           <value>
             <LeetcodeEditor>
@@ -1009,6 +1020,17 @@
               <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode872_LeafSimilarTrees.java" />
               <option name="titleSlug" value="leaf-similar-trees" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode889_ConstructBinaryTreeFromPreorderAndPostorderTraversal.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetCode889_ConstructBinaryTreeFromPreorderAndPostorderTraversal.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com889" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode889_ConstructBinaryTreeFromPreorderAndPostorderTraversal.java" />
+              <option name="titleSlug" value="construct-binary-tree-from-preorder-and-postorder-traversal" />
             </LeetcodeEditor>
           </value>
         </entry>
