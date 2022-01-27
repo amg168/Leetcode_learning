@@ -547,6 +547,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode1022_SumOfRootToLeafBinaryNumbers.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetCode1022_SumOfRootToLeafBinaryNumbers.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com1022" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode1022_SumOfRootToLeafBinaryNumbers.java" />
+              <option name="titleSlug" value="sum-of-root-to-leaf-binary-numbers" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode103_BinaryTreeZigzagLevelOrderTraversal.java">
           <value>
             <LeetcodeEditor>
@@ -1034,6 +1045,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode894_AllPossibleFullBinaryTrees.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetCode894_AllPossibleFullBinaryTrees.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com894" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode894_AllPossibleFullBinaryTrees.java" />
+              <option name="titleSlug" value="all-possible-full-binary-trees" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode897_IncreasingOrderSearchTree.java">
           <value>
             <LeetcodeEditor>
@@ -1045,11 +1067,66 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode919_CompleteBinaryTreeInserter.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetCode919_CompleteBinaryTreeInserter.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com919" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode919_CompleteBinaryTreeInserter.java" />
+              <option name="titleSlug" value="complete-binary-tree-inserter" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode938_RangeSumOfBst.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetCode938_RangeSumOfBst.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com938" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode938_RangeSumOfBst.java" />
+              <option name="titleSlug" value="range-sum-of-bst" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode94_BinaryTreeInorderTraversal.java">
           <value>
             <LeetcodeEditor>
               <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetCode94_BinaryTreeInorderTraversal.md" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode94_BinaryTreeInorderTraversal.java" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode965_UnivaluedBinaryTree.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetCode965_UnivaluedBinaryTree.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com965" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode965_UnivaluedBinaryTree.java" />
+              <option name="titleSlug" value="univalued-binary-tree" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode968_BinaryTreeCameras.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetCode968_BinaryTreeCameras.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com968" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode968_BinaryTreeCameras.java" />
+              <option name="titleSlug" value="binary-tree-cameras" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode993_CousinsInBinaryTree.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetCode993_CousinsInBinaryTree.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com993" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode993_CousinsInBinaryTree.java" />
+              <option name="titleSlug" value="cousins-in-binary-tree" />
             </LeetcodeEditor>
           </value>
         </entry>
