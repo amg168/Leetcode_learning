@@ -1,0 +1,105 @@
+
+    /**
+     * Definition for a binary tree node.
+     * public class TreeNode {
+     * int val;
+     * TreeNode left;
+     * TreeNode right;
+     * TreeNode() {}
+     * TreeNode(int val) { this.val = val; }
+     * TreeNode(int val, TreeNode left, TreeNode right) {
+     * this.val = val;
+     * this.left = left;
+     * this.right = right;
+     * }
+     * }
+     */
+class Solution {
+    List<List<Integer>> result = new ArrayList<>();
+    public List<List<Integer>> verticalTraversal(TreeNode root) {
+        if(root == null)
+            return result;
+
+        travel(root);
+        return result;
+    }
+
+    public void travel(TreeNode root) {
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+
+        //从列索引到list的映射
+        Map<Integer,NodeByIndex> map = new TreeMap<>();
+        map.put(root.val, new NodeByIndex(root,0,0));
+
+        Comparator<Map.Entry<Integer,NodeByIndex>> valueComparator = new Comparator<Map.Entry<Integer,NodeByIndex>>() {
+            @Override
+            public int compare(Map.Entry<Integer , NodeByIndex> entry1 , Map.Entry<Integer,NodeByIndex> entry2) {
+                if(entry1.getValue().yIndex != entry2.getValue().yIndex)
+                    return entry1.getValue().yIndex - entry2.getValue().yIndex;
+                else if(entry1.getValue().xIndex != entry2.getValue().xIndex)
+                    return entry1.getValue().xIndex -entry2.getValue().xIndex;
+                else
+                    return entry1.getValue().node.val - entry2.getValue().node.val;
+            }
+        };
+
+        while (!queue.isEmpty()) {
+                int size = queue.size();
+
+                for(int i = 0 ; i < size ; i++) {
+                    TreeNode cur = queue.poll();
+                    NodeByIndex curNodeIndex = map.get(cur.val);
+
+                    if (cur.left != null) {
+                        queue.add(cur.left);
+                        NodeByIndex leftNodeIndex = new NodeByIndex(cur.left,curNodeIndex.xIndex + 1, curNodeIndex.yIndex - 1);
+                        map.put(cur.left.val, leftNodeIndex);
+
+                    }
+
+                    if (cur.right != null) {
+                        queue.add(cur.right);
+                        NodeByIndex rightNodeIndex = new NodeByIndex(cur.right,curNodeIndex.xIndex + 1, curNodeIndex.yIndex + 1);
+                        map.put(cur.right.val, rightNodeIndex);
+                    }
+                }
+        }
+
+        //对map进行排序
+        List<Map.Entry<Integer,NodeByIndex>> list = new ArrayList<Map.Entry<Integer,NodeByIndex>>(map.entrySet());
+        Collections.sort(list,valueComparator);
+
+        int lastcol = Integer.MIN_VALUE;
+        int size = 0;
+        for (Map.Entry<Integer, NodeByIndex> entry : list) {
+            if(entry.getValue().yIndex != lastcol){
+                lastcol = entry.getValue().yIndex;
+                result.add(new ArrayList<>());
+                size++;
+            }
+            result.get(size - 1).add(entry.getValue().node.val);
+        }
+
+        System.out.println(result);
+    }
+
+}
+
+class NodeByIndex {
+    TreeNode node;
+    int xIndex;
+    int yIndex;
+
+    public NodeByIndex(TreeNode node , int xIndex, int yIndex) {
+        this.node = node;
+        this.xIndex = xIndex;
+        this.yIndex = yIndex;
+    }
+}
+
+//total_testcases:32
+//total_correct:31
+//input_formatted:[3,1,4,0,2,2]
+//expected_output:[[0],[1],[3,2,2],[4]]
+//code_output:[[0],[1],[3,2],[4]]

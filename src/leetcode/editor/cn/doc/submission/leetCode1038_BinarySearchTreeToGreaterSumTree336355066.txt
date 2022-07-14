@@ -1,0 +1,94 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    /*
+    先通过中序遍历得到递增序列，然后进行累加
+     */
+//    List<Integer> nodelist = new ArrayList<>();
+//    TreeNode cur = null;
+//    public TreeNode bstToGst(TreeNode root) {
+//
+//        InOrder(root);
+//        cur = root;
+//        Queue<TreeNode> queue = new LinkedList<>();
+//        queue.add(root);
+//
+//        while (!queue.isEmpty()){
+//            int size = queue.size();
+//
+//            for(int i = 0 ; i < size ; i++){
+//                cur = queue.poll();
+//                int index = nodelist.indexOf(cur.val);
+//                int count  = 0 ;
+//                for(int j = index ; j < nodelist.size() ; j++){
+//                    count += nodelist.get(j);
+//                }
+//
+//                cur.val = count;
+//
+//                if(cur.left != null)
+//                    queue.add(cur.left);
+//
+//                if(cur.right != null){
+//                    queue.add(cur.right);
+//                }
+//            }
+//        }
+//
+//        return root;
+//    }
+//
+//    public void InOrder(TreeNode root){
+//        if(root == null)
+//            return;
+//
+//        InOrder(root.left);
+//        nodelist.add(root.val);
+//        InOrder(root.right);
+//    }
+
+    public TreeNode bstToGst(TreeNode root) {
+        return rightInOrder(root);
+    }
+
+    //实现从最右侧节点到根到左侧节点的遍历
+    public TreeNode rightInOrder(TreeNode root){
+        if(root == null)
+            return root;
+        int count = 0;
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode node = root;
+        while(node != null || !stack.isEmpty()){
+            while(node != null){
+                stack.push(node);
+                node = node.right;
+            }
+
+            if(!stack.isEmpty()){
+                node = stack.pop();
+                count += node.val;
+                node.val = count;
+                System.out.println(node.val);
+                node = node.left;
+            }
+        }
+
+        return  root;
+    }
+}
+
+//runtime:4 ms
+//memory:39.5 MB

@@ -1,52 +1,52 @@
 package leetcode.editor.cn;
 
-import java.util.ArrayDeque;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class GenerateBinaryTreeFromArray {
     private static TreeNode node;
+    static TreeNode root = null;
     //根据数据来创建二叉树
-    public static TreeNode generateBT(Object[] arr){
-        Queue<TreeNode> queue = new LinkedList<>();
-
-        TreeNode root = new TreeNode((int)arr[0]);
-        queue.add(root);
-
-        TreeNode currentNode;
-
-        for(int i = 0 ; i < arr.length ; i++){
-            currentNode = queue.poll();
-            if(arr[i] != null){
-
-                if(2 * i + 1 < arr.length){
-                    if(arr[2 * i + 1] == null)
-                        currentNode.left = null;
-                    else{
-                        currentNode.left = new TreeNode((int) arr[2 * i + 1]);
-                        queue.add(currentNode.left);
-                    }
-
-                }
-
-                if(2 * i + 2 < arr.length){
-                    if(arr[2 * i + 2] == null)
-                        currentNode.right = null;
-                    else{
-                        currentNode.right = new TreeNode((int) arr[2 * i + 2]);
-                        queue.add(currentNode.right);
-                    }
-
-                }
-
+    public static TreeNode generateBT(Integer[] array){
+            if (array == null || array.length == 0 || array[0] == null) {
+                return null;
             }
+
+            int index = 0;
+            int length = array.length;
+
+            TreeNode root = new TreeNode(array[0]);
+            Deque<TreeNode> nodeQueue = new LinkedList<>();
+            nodeQueue.offer(root);
+            TreeNode currNode;
+            while (index < length) {
+                index++;
+                if (index >= length) {
+                    return root;
+                }
+                currNode = nodeQueue.poll();
+                Integer leftChild = array[index];
+                if (leftChild != null) {
+                    currNode.left = new TreeNode(leftChild);
+                    nodeQueue.offer(currNode.left);
+                }
+                index++;
+                if (index >= length) {
+                    return root;
+                }
+                Integer rightChild = array[index];
+                if (rightChild != null) {
+                    currNode.right = new TreeNode(rightChild);
+                    nodeQueue.offer(currNode.right);
+                }
+            }
+
+            return root;
         }
 
-        return root;
-    }
+
 
     public static void main(String[] args) {
-        Object[] arr= {1,2,3,4,5,6,null,null,null,7,8};
+        Integer[] arr= {8,3,10,1,6,null,14,null,null,4,7,13};
 
         TreeNode root = generateBT(arr);
 
@@ -68,4 +68,5 @@ public class GenerateBinaryTreeFromArray {
             }
         }
     }
+
 }

@@ -1,0 +1,53 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public boolean checkTree(TreeNode root) {
+
+    if(root == null)
+        return false；
+    else{
+       if(root.left == null  || root.right ==null）
+       return false;
+       else{
+           if(root.val == root.left.val + root.right.val)
+           return true;
+           else
+             return false;
+       }
+       
+    ｝
+    }
+}
+//total_correct:0
+//compile_error:Line 20: error: illegal character: '\uff1b'
+        return false；
+                    ^
+Line 22: error: illegal character: '\uff09'
+       if(root.left == null  || root.right ==null）
+                                                 ^
+Line 31: error: illegal character: '\uff5d'
+    ｝
+    ^
+Line 24: error: 'else' without 'if'
+       else{
+       ^
+Line 21: error: 'else' without 'if'
+    else{
+    ^
+Line 33: error: reached end of file while parsing
+}
+ ^
+6 errors
