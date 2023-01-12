@@ -98,11 +98,13 @@ public class Test {
         }
     }
     public static void main(String[] args) {
-        Test test = new Test();
-        String str1 = "intention";
-        String  str2 = "execution";
-
-        test.minDinstance(str1,str2);
+//        Test test = new Test();
+//        String str1 = "intention";
+//        String  str2 = "execution";
+//
+//        test.minDinstance(str1,str2);
+        System.out.println(5 > 5);
+        System.out.println(5 < 5);
 
     }
 
@@ -354,6 +356,7 @@ public class Test {
 
         return  dp[n][amount];
     }
+
 }
 
 class DpNode{

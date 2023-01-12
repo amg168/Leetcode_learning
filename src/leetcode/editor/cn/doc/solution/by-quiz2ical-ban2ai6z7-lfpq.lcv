@@ -1,0 +1,37 @@
+分析：1) 如何断开连接 2) 二叉树什么位置需要插入的List中
+
+第一个例子的后序遍历流程如图所示:
+![image.png](https://pic.leetcode-cn.com/1663846224-siKZxG-image.png)
+
+主要构造了一个辅助函数，其实现功能是: 对于一个root节点，如果其是要被删除的节点，那么添加其左右孩子，并返回null使其断开与其父节点之前的连接
+
+* 
+
+```
+class Solution {
+    Set<Integer> toDeleteSet = new HashSet<>();
+    List<TreeNode> forest = new ArrayList<>();
+
+    public List<TreeNode> delNodes(TreeNode root, int[] to_delete) {
+        for (int i : to_delete) toDeleteSet.add(i);    // 哈希表存储删除的数
+        addNodeToList(root);
+        if (root != null && !toDeleteSet.contains(root.val)) forest.add(root);  //根节点单独判断
+        return forest;
+    }
+
+    // root不是被删除节点或null，就返回其本身， 否则返回null
+    private TreeNode addNodeToList(TreeNode root) {
+        if (root == null) return null;
+        // 这里用 root.left、root.right 接收返回值，返回null就断开连接了 
+        root.left = addNodeToList(root.left);      // 遍历其左孩子情况
+        root.right = addNodeToList(root.right);    // 遍历其右孩子情况
+        if (toDeleteSet.contains(root.val)) {   // 父节点是被删除的值，需要添加其左右孩子到森林中
+            if (root.left != null) forest.add(root.left);
+            if (root.right != null) forest.add(root.right);
+            root = null;
+        }
+        return root;
+    }
+}
+```
+

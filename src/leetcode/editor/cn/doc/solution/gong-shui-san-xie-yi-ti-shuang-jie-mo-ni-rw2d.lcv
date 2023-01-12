@@ -1,0 +1,107 @@
+## 模拟
+
+一个朴素的做法是根据题意进行模拟。
+
+利用从根节点到任意一层都是满二叉树，我们可以先确定 `label` 所在的层级 `level`，然后计算出当前层起始节点值（最小值）和结束节点值（最大值）。
+
+再利用「每层节点数量翻倍」&「隔层奇偶性翻转」，寻址出上一层的节点下标（令每层下标均「从左往右」计算，并从 $1$ 开始），直到构造出答案（寻址到根节点）。
+
+代码：
+
+* []
+
+```Java
+class Solution {
+    // 第 level 层的起始节点值
+    int getStart(int level) {
+        return (int)Math.pow(2, level - 1);
+    }
+    // 第 level 层的结束节点值
+    int getEnd(int level) {
+        int a = getStart(level);
+        return a + a - 1;
+    }
+    public List<Integer> pathInZigZagTree(int n) {
+        // 计算 n 所在层级
+        int level = 1;
+        while (getEnd(level) < n) level++;
+
+        int[] ans = new int[level];
+        int idx = level - 1, cur = n;
+        while (idx >= 0) {
+            ans[idx--] = cur;
+            int tot = (int)Math.pow(2, level - 1);
+            int start = getStart(level), end = getEnd(level);
+            if (level % 2 == 0) {
+                // 当前层为偶数层，则当前层节点「从右往左」数值递增，相应计算上一层下标也应该「从右往左」
+                int j = tot / 2;
+                for (int i = start; i <= end; i += 2, j--) {
+                    if (i == cur || (i + 1) == cur) break;
+                }
+                int prevStart = getStart(level - 1);
+                while (j-- > 1) prevStart++;
+                cur = prevStart;
+            } else {
+                // 当前层为奇数层，则当前层节点「从左往右」数值递增，相应计算上一层下标也应该「从左往右」
+                int j = 1;
+                for (int i = start; i <= end; i += 2, j++) {
+                    if (i == cur || (i + 1) == cur) break;
+                }
+                int prevEnd = getEnd(level - 1);
+                while (j-- > 1) prevEnd--;
+                cur = prevEnd;
+            }
+            level--;
+        }
+        List<Integer> list = new ArrayList<>();
+        for (int i : ans) list.add(i);
+        return list;
+    }
+}
+```
+
+* 时间复杂度：确定 $n$ 所在层级复杂度为 $O(\log{n})$；构造答案最坏情况下每个节点会被遍历一次，复杂度为 $O(n)$
+* 空间复杂度：$O(1)$
+
+---
+
+## 数学
+
+上述解法复杂度上界取决于「由当前行节点位置确定上层位置」的线性遍历。
+
+如果二叉树本身不具有奇偶性翻转的话，显然某个节点 $x$ 的父节点为 $\left \lfloor x / 2 \right \rfloor$，但事实上存在奇偶性翻转，而在解法一中我们已经可以 $O(1)$ 计算某一层的起始值和结束值，有了「起始值 & 结算值」和「当前节点所在层的相对位置」，只需要利用“对称性”找到父节点在上层的相应位置，然后根据相应位置算出父节点值即可。
+
+代码：
+
+* []
+
+```Java
+class Solution {
+    int getStart(int level) {
+        return (int)Math.pow(2, level - 1);
+    }
+    int getEnd(int level) {
+        int a = getStart(level);
+        return a + a - 1;
+    }
+    public List<Integer> pathInZigZagTree(int n) {
+        int level = 1;
+        while (getEnd(level) < n) level++;
+        int[] ans = new int[level];
+        int idx = level - 1, cur = n;
+        while (idx >= 0) {
+            ans[idx--] = cur;
+            int loc = ((1 << (level)) - 1 - cur) >> 1;
+            cur = (1 << (level - 2)) + loc;
+            level--;
+        }
+        List<Integer> list = new ArrayList<>();
+        for (int i : ans) list.add(i);
+        return list;
+    }
+}
+```
+
+* 时间复杂度：复杂度上界取决于确定 $n$ 所在层级。复杂度为 $O(\log{n})$
+* 空间复杂度：$O(1)$
+
