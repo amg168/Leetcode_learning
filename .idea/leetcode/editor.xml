@@ -3,50 +3,6 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
-        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[2415]反转二叉树的奇数层.java">
-          <value>
-            <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/[2415]反转二叉树的奇数层.md" />
-              <option name="frontendQuestionId" value="leetcode.cn2415" />
-              <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/[2415]反转二叉树的奇数层.java" />
-              <option name="titleSlug" value="reverse-odd-levels-of-binary-tree" />
-            </LeetcodeEditor>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/ .java">
-          <value>
-            <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetcode2415_ReverseOddLevelsOfBinaryTree.md" />
-              <option name="frontendQuestionId" value="leetcode.cn2415" />
-              <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetcode2415_ReverseOddLevelsOfBinaryTree.java" />
-              <option name="titleSlug" value="reverse-odd-levels-of-binary-tree" />
-            </LeetcodeEditor>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/ReverseOddLevelsOfBinaryTree .java">
-          <value>
-            <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetcode2415_ReverseOddLevelsOfBinaryTree.md" />
-              <option name="frontendQuestionId" value="leetcode.cn2415" />
-              <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetcode2415_ReverseOddLevelsOfBinaryTree.java" />
-              <option name="titleSlug" value="reverse-odd-levels-of-binary-tree" />
-            </LeetcodeEditor>
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/[2415]反转二叉树的奇数层.java">
-          <value>
-            <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/ .md" />
-              <option name="frontendQuestionId" value="leetcode.cn2415" />
-              <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/ .java" />
-              <option name="titleSlug" value="reverse-odd-levels-of-binary-tree" />
-            </LeetcodeEditor>
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode1008_ConstructBinarySearchTreeFromPreorderTraversal.java">
           <value>
             <LeetcodeEditor>
@@ -242,6 +198,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode2236_RootEqualsSumOfChildren.java" />
               <option name="titleSlug" value="root-equals-sum-of-children" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode2265_CountNodesEqualToAverageOfSubtree.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetCode2265_CountNodesEqualToAverageOfSubtree.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2265" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode2265_CountNodesEqualToAverageOfSubtree.java" />
+              <option name="titleSlug" value="count-nodes-equal-to-average-of-subtree" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -751,36 +718,36 @@
             </LeetcodeEditor>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetcode/editor/cn/[2415]反转二叉树的奇数层.java">
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCodeLCP 67_KnLfVT.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetcode2415_ReverseOddLevelsOfBinaryTree.md" />
-              <option name="frontendQuestionId" value="leetcode.cn2415" />
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetCodeLCP 67_KnLfVT.md" />
+              <option name="frontendQuestionId" value="leetcode.cnLCP 67" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetcode2415_ReverseOddLevelsOfBinaryTree.java" />
-              <option name="titleSlug" value="reverse-odd-levels-of-binary-tree" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCodeLCP 67_KnLfVT.java" />
+              <option name="titleSlug" value="KnLfVT" />
             </LeetcodeEditor>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetcode2196_CreateBinaryTreeFromDescriptions.java">
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode剑指 Offer 27_ErChaShuDeJingXiangLcof.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetcode2196_CreateBinaryTreeFromDescriptions.md" />
-              <option name="frontendQuestionId" value="leetcode.cn2196" />
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetCode剑指 Offer 27_ErChaShuDeJingXiangLcof.md" />
+              <option name="frontendQuestionId" value="leetcode.cn剑指 Offer 27" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetcode2196_CreateBinaryTreeFromDescriptions.java" />
-              <option name="titleSlug" value="create-binary-tree-from-descriptions" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode剑指 Offer 27_ErChaShuDeJingXiangLcof.java" />
+              <option name="titleSlug" value="er-cha-shu-de-jing-xiang-lcof" />
             </LeetcodeEditor>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetcode2415_ReverseOddLevelsOfBinaryTree.java">
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode剑指 Offer 55 - I_ErChaShuDeShenDuLcof.java">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetcode2415_ReverseOddLevelsOfBinaryTree.md" />
-              <option name="frontendQuestionId" value="leetcode.cn2415" />
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/leetCode剑指 Offer 55 - I_ErChaShuDeShenDuLcof.md" />
+              <option name="frontendQuestionId" value="leetcode.cn剑指 Offer 55 - I" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetcode2415_ReverseOddLevelsOfBinaryTree.java" />
-              <option name="titleSlug" value="reverse-odd-levels-of-binary-tree" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/leetCode剑指 Offer 55 - I_ErChaShuDeShenDuLcof.java" />
+              <option name="titleSlug" value="er-cha-shu-de-shen-du-lcof" />
             </LeetcodeEditor>
           </value>
         </entry>
