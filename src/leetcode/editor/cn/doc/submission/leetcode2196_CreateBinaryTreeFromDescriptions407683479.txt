@@ -1,0 +1,53 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+import java.util.Hashtable;
+import java.util.Map;
+class Solution {
+    TreeNode root = null;
+    public TreeNode createBinaryTree(int[][] descriptions) {
+        Hashtable<Integer,TreeNode> allNodes = new Hashtable<>();
+        //维护第二个表，如果数据第一个值代表的节点不在在第二个值代表的节点序列中，则此节点为跟节点
+        Hashtable<Integer,TreeNode> secondNodes = new Hashtable<>();
+        boolean isRoot = false;
+        for(int i = 0 ; i < descriptions.length; i++){
+                TreeNode newNode = allNodes.getOrDefault(descriptions[i][0],new TreeNode(descriptions[i][0]));
+                allNodes.put(descriptions[i][0],newNode);
+
+                if(descriptions[i][2] == 1){
+                    TreeNode left = allNodes.getOrDefault(descriptions[i][1],new TreeNode(descriptions[i][1]));
+                    allNodes.put(descriptions[i][1],left);
+                    secondNodes.put(descriptions[i][1],left);
+                    newNode.left = left;
+                }else{
+                    TreeNode right = allNodes.getOrDefault(descriptions[i][1],new TreeNode(descriptions[i][1]));
+                    allNodes.put(descriptions[i][1],right);
+                    secondNodes.put(descriptions[i][1],right);
+                    newNode.right = right;
+                }
+        }
+
+        for(Map.Entry<Integer,TreeNode> entry: allNodes.entrySet()){
+            if(!secondNodes.containsKey(entry.getKey())){
+                isRoot = true;
+                root = entry.getValue();
+            }
+        }
+
+        return  root;
+    }
+}
+//runtime:84 ms
+//memory:51.2 MB
